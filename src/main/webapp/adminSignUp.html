@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="ISO-8859-1">
+	<style>
+		* {
+			padding: 0;
+			margin: 0;
+		}
+
+		body {
+			position: relative;
+		}
+
+		.main-container {
+			height: 80px;
+			width: 100%;
+			height: 150px;
+		}
+
+		#image-cont {
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+
+		.nav-container {
+			display: flex;
+			align-items: center;
+			justify-content: space-around;
+			background-color: #D0D4CA;
+			padding: 20px;
+		}
+
+		.std-cont {
+
+			height: 250px;
+			width: 450px;
+			display: grid;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.std-cont .uid-cont {
+			height: 40px;
+			font-size: 20px;
+		}
+
+		.super-main {
+
+			top: 100px;
+			display: grid;
+			align-items: center;
+			justify-content: center;
+		}
+
+
+
+		.btn-container button {
+			padding-left: 15px;
+			padding-right: 15px;
+			padding-top: 5px;
+			padding-bottom: 5px;
+			border-radius: 10px;
+			background-color: #164863;
+			color: #fff;
+		}
+
+		.btn-container button:hover {
+			background-color: deepskyblue;
+		}
+
+		input {
+			padding: 5px;
+			width: 200px;
+		}
+	</style>
+	<title>Admin SignUp</title>
+</head>
+
+<body>
+	<form action="adminsign" method="post">
+		<div class="main-container">
+			<div style="background-color: #EFECEC; height: 15px;"></div>
+
+			<nav class="nav-container">
+				<div>
+					<img src="./icse-logo-removebg-preview.png" height="110px" width="300px" id="image-cont">
+				</div>
+				<div style="font-family: sans-serif; font-size: 22px;">COUNCIL
+					FOR THE INDIAN SCHOOL CERTIFICATE EXAMINATIONS</div>
+				<div>
+					<div>Email:helpdesk@cisce.org</div>
+				</div>
+			</nav>
+			<div style="background: #45474B; height: 25px;"></div>
+		</div>
+		<br>
+
+		<div class="super-main">
+			<div class="std-cont">
+				<h1>Sign Up</h1>
+				<div class="uid-cont">
+					<div>
+						<input type="email" name="email" placeholder="Enter Email ID">
+					</div>
+					<br>
+					<div>
+						<input type="password" name="pwd" placeholder="Enter Password">
+					</div>
+				</div>
+				<br>
+				<div class="btn-container">
+
+					<button type="submit">Submit</button>
+					<button type="reset">Reset</button>
+				</div>
+			</div>
+		</div>
+
+
+</body>
+
+</html>
