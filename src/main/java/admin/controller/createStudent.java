@@ -66,6 +66,7 @@ public class createStudent implements Servlet {
 		Date d1 = new Date(bday);
 		std.setDOB(d1);
 		int percentage= (int)((engmarks+kanmarks+socmarks+scimarks+mathmarks+compmarks)/600)*100;
+		System.out.println(percentage);
 		if(percentage>=33)
 		{
 			std.setResult("Pass");

@@ -22,7 +22,7 @@ public class studentMarksCard extends HttpServlet {
 		Student dto = dao.fetchbyid(Integer.parseInt(id));
 		if (dto != null) {
 			resp.getWriter().print(dto);
-			req.setAttribute("object", dto);
+			req.setAttribute("markscard", dto);
 			RequestDispatcher dispatcher = req.getRequestDispatcher("download3.jsp");
 			dispatcher.forward(req, resp);
 		} else {
